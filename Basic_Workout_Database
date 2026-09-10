@@ -7,4 +7,19 @@
    <body> 
         <h1><b>Introduction</b></h1>
         <p>This page here has a list of basic movements as well as the muscle groups they target. Using the videos and pictures provided your fitness journey will undoubtedly go smoothly!</p>
+       
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/shorts/hWbUlkb5Ms4&ved=2ahUKEwiygf-D--SWAxW34ckDHSw7HZMQ3aoNegQIExAN&usg=AOvVaw2WP-hVdRwlM07Y_pqXoDsx">
+        <img src="/Images/Bench_Press.jpeg" alt="This is called the bench press and has a full focus on your pectoral muscles" width="250" height="250" title="Bench Press demonstration">
+        </a>
+        
+        <img src="/Images/Incline_DB_Bench.jpeg" alt="This workout is called the incline dumbbell bench press and has a focus on your upper pectoral muscles" width="250" height="250" title="Incline Dumbbell Bench Press demonstration">
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/shorts/PiJQPOiMua4&ved=2ahUKEwj08qb8_-SWAxUF6ckDHT6QNUwQ3aoNegQIERAN&usg=AOvVaw2X6qTZopBkWqbnUoVZJJiH">
+            Incline Dumbbell Bench Press demonstration
+        </a>
+    
+        <img src="/Images/DB_Fly.jpeg" alt="This workout is called the dumbbell fly and has a focus on your pectoral muscles" width="250" height="250" title="Dumbbell Fly demonstration">
+        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/shorts/ozAhti8BK6s&ved=2ahUKEwjbp4PDgeWWAxWy6ckDHUhTLqAQ3aoNegQIExAO&usg=AOvVaw3Z-hawkwB0xetoRn0BA1gm">
+            Dumbbell Fly demonstration
+        </a>
+    
     </body>
