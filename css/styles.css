@@ -8,7 +8,7 @@ body {
 
 h1, h2, h3 {
     font-family: Georgia, serif;
-    font-weight: normal;
+    font-weight: bold;
     background-color: #f4f4f4;
     color: darkslategray
 }
