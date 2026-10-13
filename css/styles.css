@@ -57,3 +57,93 @@ main {
     background-color: white;
     margin: 0.75rem 0 0.25rem;
 }
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: darkslategray;
+}
+
+.site-name {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.site-nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.site-nav a[aria-current="page"] {
+    background-color: white;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+/* Keep page text off the screen edges now that body has no padding */
+h1, h2, body > p {
+    padding: 0 1.5rem;
+}
+
+/* The embedded video never grows wider than the screen */
+iframe {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 2rem;
+}
+
+/* Small screens (phones): stack the header, give nav links full-width
+   tap targets, and let each exercise card use the whole row */
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+
+    .site-nav {
+        flex-direction: column;
+    }
+
+    .site-nav a {
+        padding: 0.75rem;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .exercise-list {
+        padding: 1rem 0.5rem;
+    }
+
+    .exercise-card {
+        max-width: none;
+    }
+
+    h1, h2, body > p {
+        padding: 0 1rem;
+    }
+
+    iframe {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
