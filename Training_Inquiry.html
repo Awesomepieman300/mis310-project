@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Training Inquiry | Iron Tip Fitness</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <header class="site-header">
+            <p class="site-name">Iron Tip Fitness</p>
+            <nav class="site-nav" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="Basic_Workout_Database.html">Workout Database</a>
+                <a href="training_inquiry.html" aria-current="page">Training Inquiry</a>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <h1>Personal Training Inquiry</h1>
+            <p>Interested in working with an Iron Tip Fitness coach? Tell us a little about yourself and your goals, and a coach will reach out to set up your first session.</p>
+            <p>Fields marked with <span class="required-mark" aria-hidden="true">*</span> are required.</p>
+
+            <form class="inquiry-form" method="post" action="https://miswebapps.uncw.edu/mis310/form-submit.aspx">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <div class="form-field">
+                        <label for="full-name">Full name <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="text" id="full-name" name="full_name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email address <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-hint">
+                        <p class="hint" id="phone-hint">Optional. Example: 910-555-0123</p>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experience level <span class="required-mark" aria-hidden="true">*</span></legend>
+                    <div class="choice">
+                        <input type="radio" id="level-beginner" name="experience_level" value="Beginner" required>
+                        <label for="level-beginner">Beginner (less than 6 months of training)</label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="level-intermediate" name="experience_level" value="Intermediate">
+                        <label for="level-intermediate">Intermediate (6 months to 2 years)</label>
+                    </div>
+                    <div class="choice">
+                        <input type="radio" id="level-advanced" name="experience_level" value="Advanced">
+                        <label for="level-advanced">Advanced (more than 2 years)</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What are your goals? (Choose all that apply)</legend>
+                    <div class="choice">
+                        <input type="checkbox" id="goal-strength" name="goals" value="Build strength">
+                        <label for="goal-strength">Build strength</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="goal-muscle" name="goals" value="Build muscle">
+                        <label for="goal-muscle">Build muscle</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="goal-fat-loss" name="goals" value="Lose body fat">
+                        <label for="goal-fat-loss">Lose body fat</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="goal-endurance" name="goals" value="Improve endurance">
+                        <label for="goal-endurance">Improve endurance</label>
+                    </div>
+                    <div class="choice">
+                        <input type="checkbox" id="goal-form" name="goals" value="Learn proper form">
+                        <label for="goal-form">Learn proper form</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Scheduling</legend>
+
+                    <div class="form-field">
+                        <label for="start-date">Preferred start date</label>
+                        <input type="date" id="start-date" name="start_date">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="sessions">Sessions per week <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="number" id="sessions" name="sessions_per_week" min="1" max="7" value="3" required aria-describedby="sessions-hint">
+                        <p class="hint" id="sessions-hint">Choose a number from 1 to 7.</p>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="training-time">Preferred time of day <span class="required-mark" aria-hidden="true">*</span></label>
+                        <select id="training-time" name="training_time" required>
+                            <option value="">-- Select a time --</option>
+                            <option value="Early morning (5-8 AM)">Early morning (5-8 AM)</option>
+                            <option value="Midday (11 AM-2 PM)">Midday (11 AM-2 PM)</option>
+                            <option value="Evening (5-8 PM)">Evening (5-8 PM)</option>
+                            <option value="Flexible">Flexible</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div class="form-field">
+                    <label for="notes">Injuries, limitations, or anything else your coach should know</label>
+                    <textarea id="notes" name="notes" rows="5" maxlength="1000"></textarea>
+                </div>
+
+                <div class="choice">
+                    <input type="checkbox" id="contact-consent" name="contact_consent" value="Yes" required>
+                    <label for="contact-consent">I agree to be contacted by an Iron Tip Fitness coach about this inquiry. <span class="required-mark" aria-hidden="true">*</span></label>
+                </div>
+
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </main>
+    </body>
+</html>
